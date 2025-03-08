@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTX</title>
+    <link rel="stylesheet" href="main_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="title">
+            <a>Day: </a><a id="daycount">1</a><a>  Net Worth: </a><a id="networth">1000</a><a> USD</a>
+
+        </div>
+    </div>
+
+    <div id="main_content">
+        <div id="mtx">
+            <h1>Wartość Kryptawaluty MTX</h1> <br/><br>
+            
+            <a id="valuemtx">0</a><a id="usd">  USD</a> <br><br>
+             
+            <center>
+            <canvas id="myChart" style="width:800px;max-width:1000px"></canvas>
+            </center>
+        </div>
+
+
+    </div>
+    <div id="calc">
+
+        <div id="player1_n">
+            <a id="money_d"></a><a>USD</a> <br>
+            <!-- MTX Section -->
+            <a class="ca4">MTX</a> 
+            <input id="input_mtx1" type="number"> 
+            <button onclick="p1buy_mtx()" style=" background-color: darkgreen;">B</button>
+            <button onclick="p1sell_mtx()" style="background-color: maroon;">S</button>
+            <a class="ca2">Ilość: </a><a id="amountmtx1"></a> 
+            <a class="ca3">Wartość: </a><a id="usdvalmtx1"></a> <br>
+        
+            <!-- XDCoin Section -->
+            <a class="ca4">XDCoin</a>
+            <input id="input_xd1" type="number"> 
+            <button onclick="p1buy_xd()" style="background-color: darkgreen;">B</button>
+            <button onclick="p1sell_xd()" style="background-color: maroon;">S</button>          
+            <a class="ca2">Ilość: </a><a id="amount_xd1"></a>
+            <a class="ca3">Wartość: </a><a id="usdval_xd1"></a> <br>
+        
+            <!-- DNASC Section -->
+            <a class="ca4">DNASC</a> 
+            <input id="input_dn1" type="number"> 
+            <button onclick="p1buy_dn()" style="background-color: darkgreen;">B</button>
+            <button onclick="p1sell_dn()" style="background-color: maroon;">S</button>
+            <a class="ca2">Ilość: </a><a id="amount_dn1"></a>
+            <a class="ca3">Wartość: </a><a id="usdval_dn1"></a>
+        </div>
+        
+ 
+        
+
+
+
+        
+
+
+
+        
+
+    </div>
+
+    <script src="main.js"></script>
+
+
+
+    
+
+
+
+    
+</body>
+</html>
